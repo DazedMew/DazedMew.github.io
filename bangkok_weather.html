@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Bangkok Weather</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="assessment.css">
+
+</head>
+<body>
+  <div class="header">
+    <h1>Bangkok Weather</h1>
+
+    <p style="text-align: center; font-size: 16px; margin-top: -10px;">
+      A visualization of the current and future temperature forecast in Thailand, mainly around Bangkok, as well as,
+      a bar chart of the current weather, including the rain, wind speed, humidity, and temperature.
+    </p>
+
+    <p style="text-align: center; font-size: 16px; margin-top: -10px;">
+      API from www.open-meteo.com, Created by Jirapat Kulruchakorn
+    </p>
+  </div>
+
+  <div class="tabs">
+    <button data-tab="line">Temperature Over Time</button>
+    <button data-tab="bar">Current Conditions</button>
+    <button data-tab="cluster">Information Cluster</button>
+  </div>
+
+  <div class="canva"></div>
+
+  <script src="d3.v7.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/d3-v6-tip@1.0.9/build/d3-v6-tip.min.js"></script>
+  <script src="bangkok_weather_tabs_final.js"></script>
+</body>
+</html>
